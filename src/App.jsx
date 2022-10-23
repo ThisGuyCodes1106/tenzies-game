@@ -10,6 +10,8 @@ function App() {
   const [tenzies, setTenzies] = React.useState(false)
   const [diceArray, setDiceArray] = React.useState(allNewDice())
 
+  let count = 0
+
   React.useEffect(function() {
     const allHeld = diceArray.every(die => die.isHeld)
     const firstValue = diceArray[0].value
