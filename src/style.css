@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #124c70;
+  padding: 20px;
+  font-family: 'Karla', sans-serif;
+}
+
+main {
+  background-color: #F5F5F5;
+  height: 400px;
+  max-width: 800px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 5%;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dice--container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 10px
+}
+
+.die {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  display: grid;
+  place-items: center;
+}
+
+.die--num {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.roll--btn {
+  background-color: #8a13cf;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.roll--btn:hover {
+  background-color: #9f2be2;
+  cursor: pointer;
+}
+
+.roll--btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
